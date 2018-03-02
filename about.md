@@ -5,4 +5,4 @@ description: "About me page"
 header-img: "img/orange.jpg"
 ---
 
-正在努力入门的小学徒
+千里江山寒色远，芦花深处泊孤舟。

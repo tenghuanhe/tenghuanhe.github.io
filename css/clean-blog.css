@@ -294,6 +294,7 @@ hr.small {
   color: #0666C5;
 }
 .post-preview > a > .post-title {
+  font-family: Consolas, monaco, monospace;
   font-size: 21px;
   line-height: 1.3;
   margin-top: 30px;
@@ -335,6 +336,7 @@ hr.small {
   }
 }
 .post-content-preview {
+  font-family: Consolas, monaco, monospace;
   font-size: 13px;
   font-style: normal;
   color: #a3a3a3;
