@@ -535,3 +535,7 @@ body {
 .tag {
   font-family: Consolas, monaco, monospace;
 }
+
+.tag-list p {
+  margin: 0;
+}
