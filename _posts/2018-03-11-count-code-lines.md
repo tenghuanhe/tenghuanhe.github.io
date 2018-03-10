@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 统计代码行数
-date: 2018-01-28
+date: 2018-03-11
 categories: blog
 tags: [Linux]
 description: Linux下统计代码行数
