@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Closure function
-date: 2018-11-05
+date: 2017-11-05
 categories: blog
 tags: [language]
 description: How function closure can be implemented?
