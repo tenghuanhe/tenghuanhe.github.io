@@ -64,7 +64,8 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
 }
 ```
 
-`putTreeVal`是`TreeNode`的方法
+`putTreeVal`是`TreeNode`的方法：
+
 ```java
 final TreeNode<K,V> putTreeVal(HashMap<K,V> map, Node<K,V>[] tab,
                                int h, K k, V v) {
