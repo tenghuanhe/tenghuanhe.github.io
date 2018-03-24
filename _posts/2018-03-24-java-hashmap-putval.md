@@ -7,7 +7,7 @@ tags: [Java]
 description: HashMap putVal in Java
 ---
 
-`Java`中`HashMap`添加元素
+`Java`中`HashMap`添加元素：
 
 ```java
 final V putVal(int hash, K key, V value, boolean onlyIfAbsent,
