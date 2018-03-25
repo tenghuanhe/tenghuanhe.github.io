@@ -90,3 +90,10 @@ AbstractBeanFactory.getBean()
  -> DelegatingConstructorAccessorImpl.newInstance()
  -> 调用构造方法创建新的对象实例
 ```
+
+`https://docs.spring.io/spring/docs/3.2.x/spring-framework-reference/html/beans.html#beans-factory-class`
+
+一个`bean definition`本质上是创建一个或者多个对象的菜谱，实例化`bean`有下面几种方式：
+* 用构造器实例化
+* 通过静态工厂方法实例化
+* 通过实例工厂方法实例化 （其中工厂bean自身也是可以通过依赖注入进行管理和配置的）
