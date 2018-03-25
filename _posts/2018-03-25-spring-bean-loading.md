@@ -4,7 +4,7 @@ title: Spring Bean加载机制
 date: 2018-03-25
 categories: blog
 tags: [spring]
-description: Sync/Async (Non)Blocking
+description: Spring bean loading
 ---
 
 新建一个简单的`Spring Boot`项目：
