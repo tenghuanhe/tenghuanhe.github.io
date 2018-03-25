@@ -27,12 +27,14 @@ description: What is RDF
   
 
 `RDF`利用一个抽象模型将知识（或者信息）分解为小的部分，每一部分都遵守一些简单的规则。
-每个小的部分叫做`Statement`，遵守以下两个规则
+每个小的部分叫做`Statement`，遵守以下两个规则：
 >1. Knowledge (or information) is expressed as a list of statements, each statement takes the form of Subject-Predicate-Object, and this order should never be changed.
 一个`RDF statement`比如有如下格式
+
 ```
 subject ---- predicate ----> object
 ```
+
 >2. The name of a resource must be global and should be identiﬁed by Uniform Resource Identiﬁer (URI).
 
 TBD...
