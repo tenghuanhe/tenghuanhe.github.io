@@ -10,7 +10,7 @@ description: resize of HashMap in Java
 `Java`中`HashMap`的`resize()`方法有如下说明
 > Initializes or doubles table size. If null, allocates in accord with initial capacity target held in field threshold. Otherwise, because we are using power-of-two expansion, the elements from each bin must either stay at same index, or move with a power of two offset in the new table.
 
-在容量扩大一倍之后重新计算哈希，元素的下标要么保持不变，要么在新的`table`中移动`2^k`位。
+在容量扩大一倍之后重新计算哈希，元素的下标要么保持不变，要么在新的`table`中移动`2^n`（实际上也是旧的容量大小）位。
 
 假设`table`当前容量为`2^n`，某个元素的哈希值为`h`
 * 扩容之前，下标的值相当于取`h`的低`n`位；
