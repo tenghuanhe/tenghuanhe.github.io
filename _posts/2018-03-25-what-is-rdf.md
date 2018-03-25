@@ -20,22 +20,24 @@ description: What is RDF
 **如果所有的买家在网上购物（不论是京东还是淘宝或者Amazon）发表商品评论的时候都愿意接受并遵守某种标准的话，什么样的标准才能让我们上面的工作更容易些呢？**
 
 不难想到，这个标准应该满足下面的要求：
-* 足够灵活，能够让人们表达任何信息
-  不能说使用了这个标准之后我原来在评论里想表达的信息表达不了了。
-* 应该能够连接整个Web上分布的所有信息
-  对于同一个商品，不同的买家叫法可能不一样，比如同一本书，有人可能叫《算法导论》，有人称为《算导》，还有的人成为《CLRS》。应该有机制来消除这种不确定性。
+* 足够灵活，能够让人们表达任何信息。
+  不能说使用了这个标准之后我原来在评论里想表达的信息表达不了了。
+* 应该能够连接整个Web上分布的所有信息。
+  对于同一个商品，不同的买家叫法可能不一样，比如同一本书，有人可能叫《算法导论》，有人称为《算导》，还有的人成为《CLRS》。应该有机制来消除这种不确定性。
   
 
 `RDF`利用一个抽象模型将知识（或者信息）分解为小的部分，每一部分都遵守一些简单的规则。
 每个小的部分叫做`Statement`，遵守以下两个规则：
-> 1. Knowledge (or information) is expressed as a list of statements, each statement takes the form of Subject-Predicate-Object, and this order should never be changed.
-一个`RDF statement`比如有如下格式
+> Rule1: Knowledge (or information) is expressed as a list of statements, each statement takes the form of Subject-Predicate-Object, and this order should never be changed.
 
+一个`RDF statement`比如有如下格式：
 ```
 subject ---- predicate ----> object
 ```
 
-> 2. The name of a resource must be global and should be identiﬁed by Uniform Resource Identiﬁer (URI).
+> Rule2: The name of a resource must be global and should be identiﬁed by Uniform Resource Identiﬁer (URI).
+
+资源的名字应该通过`URI`来唯一确定。
 
 ```
 TBD...
