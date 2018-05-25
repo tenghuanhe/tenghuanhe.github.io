@@ -1,8 +1,8 @@
 "use strict";
 
-let dappContractAddress = "n1sBBFp3NuDiSzvGWTdkoQwWQdxcdZPcZXQ";
+let dappContractAddress = "n1jvAGJBUEcC7vK2KwCaRbCunowo5BuwnaN";
 var nebulas = require("nebulas"), Account = Account, neb = new nebulas.Neb();
-neb.setRequest(new nebulas.HttpRequest("https://testnet.nebulas.io"));
+neb.setRequest(new nebulas.HttpRequest("https://mainnet.nebulas.io"));
 
 let NebPay = require("nebpay");
 let nebPay = new NebPay();
