@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="./dist/nebulas.js"></script>
+    <script type="text/javascript" src="./dist/nebPay.js"></script>
+    <script type="text/javascript" src="./dist/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="./dist/bootstrap.min.js"></script>
+    <link rel='stylesheet' href="./dist/bootstrap.min.css"/>
+</head>
+
+<body style="font-family: Consolas, 宋体,serif">
+<div class="container">
+    <h2>图书评分排行榜</h2>
+    <ul id="myTab" class="nav nav-tabs">
+        <li class="active">
+            <a href="#rank-tab" data-toggle="tab">排行榜</a>
+        </li>
+        <li>
+            <a href="#rate-tab" data-toggle="tab">
+                评分
+            </a>
+        </li>
+        <li>
+            <a href="#query-tab" data-toggle="tab">查询</a>
+        </li>
+    </ul>
+
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade in active" id="rank-tab">
+            <div class="col-6" style="margin-top: 20px">
+                <table class="table" id="rank-table">
+                    <thead>
+                    <th>书名</th>
+                    <th>作者</th>
+                    <th>评分</th>
+                    <th>评价人数</th>
+                    <th></th>
+                    <th></th>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="rate-tab">
+            <div class="col-6" style="margin-top: 20px">
+                <div role="form">
+                    <div class="form-group">
+                        <label>书名</label>
+                        <input type="text" class="form-control" id="rate-title" placeholder="请输入书名">
+                    </div>
+                    <div class="form-group">
+                        <label>作者</label>
+                        <input type="text" class="form-control" id="rate-author" placeholder="请输入作者">
+                    </div>
+                    <div class="form-group">
+                        <label>评论</label>
+                        <input type="text" class="form-control" id="rate-comment" placeholder="请输入评论">
+                    </div>
+                    <div class="form-group">
+                        <label>打分：</label>
+                        <select class="form-control" id="rate-score" title="打分">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                    <button id="rate-btn" class="btn btn-lg btn-primary">评分</button>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade" id="query-tab">
+            <div class="col-6" style="margin-top: 20px">
+                <div class="form-group">
+                    <label>书名</label>
+                    <input type="text" class="form-control" id="query-title" placeholder="">
+                </div>
+                <div class="form-group">
+                    <label>作者</label>
+                    <input type="text" class="form-control" id="query-author" placeholder="">
+                </div>
+                <button id="query-btn" class="btn btn-primary">查询</button>
+                <div class="row" style="height: 20px"></div>
+                <div class="panel panel-primary" id="query-book-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title" id="query-result-title"></h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">作者：
+                            <span id="query-result-author"></span>
+                        </div>
+                        <div class="row">评分：
+                            <span id="query-result-score"></span>
+                        </div>
+                    </div>
+                    <div class="panel panel-info" style="margin-bottom: 0">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">评论</h3>
+                        </div>
+                        <div class="panel-body">
+                            <ul id="query-result-comment-list" class="list-unstyled">
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+<script type="text/javascript" src="bookrater.js"></script>
+
+</html>
