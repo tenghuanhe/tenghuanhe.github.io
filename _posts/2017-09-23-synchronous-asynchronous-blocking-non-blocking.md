@@ -77,8 +77,9 @@ mode is what usually known as the “Non Blocking I/O” model.
 
 ## 异步非阻塞（事件处理完毕通知）
 
-这个就是`Node.js`的回调函数啦，最常用的原来是最高级的
+常见的比如`Node.js`的回调函数
 
 ```java
 https://www.javacodegeeks.com/2012/08/io-demystified.html
+https://www.linuxjournal.com/article/6345
 ```
