@@ -7,7 +7,7 @@ tags: [web]
 description: Sync/Async (Non)Blocking
 ---
 
-# IO分类
+IO分类
 
 ## 同步阻塞 `Synchronous Blocking IO`
 
@@ -29,7 +29,7 @@ description: Sync/Async (Non)Blocking
 
 ## 异步非阻塞（事件准备好通知）`Asynchdronous Non Blocking IO with Readiness Events`
 
-`select()/poll()/epoll()`，应用程序首先注册好感兴趣的设备事件，然后在事件发生的时候进行相应的处理
+`select()/poll()/epoll()`，应用程序首先注册好感兴趣的设备事件，然后在事件发生的时候收到通知并进行相应的处理
 
 在`Java`里面是`Channel`和`Selector`的概念与此对应
 
